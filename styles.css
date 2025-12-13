@@ -390,7 +390,7 @@ button {
 .product__card {
   border: 1px solid #e3e7ff;
   border-radius: 16px;
-  background: #fff;
+  background: #e3e5f1;
   box-shadow: 0 15px 30px rgba(23, 46, 252, 0.08);
   overflow: hidden;
   display: flex;
