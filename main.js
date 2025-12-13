@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     closeMenu();
   });
 
-  const onHome = path === "/" || path.endsWith("index.html") || path.endsWith("/repo-name/");
+  const isHome = !!document.getElementById("randomProduct");
 
   if (onHome) {
     const homeSearchInput = document.getElementById("searchInput");
