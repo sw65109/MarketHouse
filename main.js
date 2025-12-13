@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     closeMenu();
   });
 
-  const isHome = !!document.getElementById("randomProduct");
+  const onHome = !!document.getElementById("randomProduct");
 
   if (onHome) {
     const homeSearchInput = document.getElementById("searchInput");
