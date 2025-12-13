@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market House</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/60ce17afde.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header id="navbar">
+      <nav>
+        <div class="nav__container">
+          <img
+            src="./assets/market__home.png"
+            alt="Market House Logo"
+            class="logo"
+          />
+          <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="shop.html" class="nav__link">Shop</a></li>
+            <li><a href="#" class="nav__link">Reviews</a></li>
+            <li><a href="#" class="nav__btn">Contact</a></li>
+            <li>
+              <a href="#" class="nav__link"
+                ><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="index.html" class="menu__link">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="shop.html" class="menu__link">Shop</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link">Reviews</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link">Contact</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link">
+                  <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  <span class="menu__text">Cart</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="search__container">
+        <h1>Find products you love</h1>
+        <div class="filter__wrapper">
+          <select id="filterSelect">
+            <option value="">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's clothing</option>
+          </select>
+        </div>
+        <div class="search__wrapper">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for electronic's, fashion, home goods ..."
+          />
+          <button class="search__btn" type="button">Search</button>
+        </div>
+      </section>
+      <section id="results__section">
+        <p class="results__empty">
+          Use the filters above to see matching products.
+        </p>
+        <p class="results__error" hidden></p>
+        <div class="results__skeleton hidden">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+        <ul class="results__grid"></ul>
+      </section>
+      <section id="featured__section">
+        <div class="featured__wrapper">
+          <p class="featured__eyebrow">Editor's Picks</p>
+          <h2>Featured Products</h2>
+        </div>
+        <p class="featured__description">
+          A quick taste of the highest-rated finds from our marketplace
+        </p>
+        <ul class="featured__grid"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Logo image inspired by <a href="https://vecteezy">Vecteezy</a></p>
+    </footer>
+  </body>
+</html>

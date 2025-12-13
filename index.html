@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market House</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/60ce17afde.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but Market House doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <header id="navbar">
+      <nav>
+        <div class="nav__container">
+          <img
+            src="./assets/market__home.png"
+            alt="Market House Logo"
+            class="logo"
+          />
+          <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="shop.html" class="nav__link">Shop</a></li>
+            <li><a href="#" class="nav__link">Reviews</a></li>
+            <li><a href="#" class="nav__btn">Contact</a></li>
+            <li><a href="#" class="nav__link"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a></li>
+          </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="index.html" class="menu__link">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="shop.html" class="menu__link">Shop</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Reviews</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Contact</a>
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">
+                  <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                  <span class="menu__text">Cart</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="landing">
+        <div class="landing__container">
+          <div class="landing__wrapper">
+            <div class="landing__description">
+              <h1>Discover amazing deals on products you love and enjoy!</h1>
+              <p>From fashion to electronics, shop everything in one place.</p>
+              <a href="shop.html" class="nav__btn">Start Shopping</a>
+            </div>
+          </div>
+
+          <div id="randomProduct"></div>
+
+          <div class="landing__search">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search products ..."
+            />
+            <button class="search__btn" type="button">
+              Search
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Favicon & Logo image inspired by
+        <a href="https://www.vecteezy.com/">Vecteezy</a>
+      </p>
+    </footer>
+  </body>
+</html>
