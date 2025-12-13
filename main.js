@@ -278,9 +278,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     closeMenu();
   });
 
-  const normalizedPath = path.toLowerCase();
-  const onHome =
-    normalizedPath.endsWith("/") || normalizedPath.endsWith("/index.html");
+  const onHome = path === "/" || path.endsWith("index.html") || path.endsWith("/repo-name/");
+
   if (onHome) {
     const homeSearchInput = document.getElementById("searchInput");
     const homeSearchBtn = document.querySelector(".search__btn");
