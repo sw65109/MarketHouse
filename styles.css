@@ -295,6 +295,10 @@ button {
   padding: 0 24px;
 }
 
+#search__container.is-loading #filterSelect {
+  display: none;
+}
+
 .filter__wrapper {
   display: flex;
   justify-content: center;
